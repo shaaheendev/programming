@@ -5,6 +5,13 @@
 body {
     padding: 0;
 }
+.cover-page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(74, 94, 111, 0.625);
+    display: none;
+}
 header {
     width: 100vw;
     display: flex;
@@ -25,18 +32,18 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    width: 40vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   .menu-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 20px;
     text-decoration: none;
     display: block;
+    font-size: 8vw;
   }
   .menu-content a:hover {background-color: #e6e6e6;}
-  .bash {display:block;}
 .btn {
     background-color: beige;
     border: none;
@@ -81,6 +88,23 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+input, label {
+    display: block;
+    margin:  auto;
+    width: 99%;
+}
+.add-page {
+    border: 1px solid;
+    width: 50vw;
+    text-align: center;
+    background-color: rgb(178, 174, 85);
+    position: absolute;
+    left: 20vw;
+    top: 50vw;
+    z-index: 2;
+    display: none;
+}
+
 .sub-add, .sub-search{
     width: 50%;
     height: 50%;
@@ -166,3 +190,4 @@ main {
 .group {
     padding-left: 4vw;;
 }
+.bash {display:block;}
