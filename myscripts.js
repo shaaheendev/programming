@@ -9,8 +9,8 @@ function myAddFunction() {
   }*/
   //experiment
   window.onclick = function(event) {
-    if (!event.target.matches('.btn-m', 'cover-page')) {
-      var dropdowns = document.getElementsByClassName("menu-content");
+    if (!event.target.matches('.btn-m')) {
+      var dropdowns = document.getElementsByClassName("menu-content",);
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
@@ -19,4 +19,7 @@ function myAddFunction() {
         }
       }
     }
+  }
+  function rmvFunc() {
+    document.getElementById("addCon").classList.remove("bash");
   }

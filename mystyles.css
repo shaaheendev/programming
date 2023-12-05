@@ -3,7 +3,9 @@
     /*border: 1px solid;*/
 }
 body {
-    padding: 0;
+    padding: 1vw;
+    margin: 0;
+    border-left: 1px solid;
 }
 /*.cover-page {
     position: fixed;
