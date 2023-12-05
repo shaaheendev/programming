@@ -5,13 +5,14 @@
 body {
     padding: 0;
 }
-.cover-page {
-    position: absolute;
+/*.cover-page {
+    position: fixed;
+    top:;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(74, 94, 111, 0.625);
     display: none;
-}
+}*/
 header {
     width: 100vw;
     display: flex;
@@ -31,10 +32,12 @@ header {
 .menu-content {
     display: none;
     position: absolute;
+    top: 3vw;
     background-color: #f1f1f1;
     width: 40vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border: 2px solid;
   }
   .menu-content a {
     color: black;
@@ -44,15 +47,17 @@ header {
     font-size: 8vw;
   }
   .menu-content a:hover {background-color: #e6e6e6;}
-.btn {
-    background-color: beige;
+.btn-m {
+    background-color: rgba(255, 0, 0, 0);
     border: none;
+    position: relative;
+    left: -12.2vw;
 }
-.btn:hover {
-    background-color: azure;
+.btn-m:hover {
+    background-color: rgba(240, 255, 255, 0.577);
 }
-.btn:active {
-    background-color: rgb(193, 164, 164);
+.btn-m:active {
+    background-color: rgba(193, 164, 164, 0.604);
 }
 .menu-button{
     width: 11vw;
