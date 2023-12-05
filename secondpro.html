@@ -2,9 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <style>
+            .dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+        </style>
         <title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles2.css">
     </head>
-    <body></body>
+    <body>
+        <fieldset>
+            <div class="dropdown">
+                <button>HubSpot Resources</button>
+                <div class="dropdown-content">
+                <a href="https://blog.hubspot.com/">Blog</a>
+                <a href="https://academy.hubspot.com/">Academy</a>
+                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+                </div>
+              </div>
+        </fieldset>
+    </body>
 </html>

@@ -7,13 +7,28 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <script>
+            function myFunction() {
+  document.getElementById("menOp").classList.toggle("bash");
+}
+        </script>
         <header>
-            <div class="menu-botton">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="menu">
+                <button onclick="myFunction()" class="btn menu-button">
+                    <div class="menu-button">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </button>
+                <div id="menOp" class="menu-content">
+                    <a href="#">lmnop</a>
+                    <a href="#">lmnop</a>
+                    <a href="#">lmnop</a>
+                    <a href="#">lmnop</a>
+                </div>
             </div>
-            <h1>Contacts</h1>
+            <h1 id="lmNo" class="">Contacts</h1>
             <div></div>
             <div></div>
             <div></div>

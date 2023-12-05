@@ -17,7 +17,37 @@ header {
     margin-bottom: 2px;
     background-color: beige;
 }
-.menu-botton{
+.menu {
+    position: relative;
+    display: inline-block;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .menu-content a:hover {background-color: #e6e6e6;}
+  .bash {display:block;}
+.btn {
+    background-color: beige;
+    border: none;
+}
+.btn:hover {
+    background-color: azure;
+}
+.btn:active {
+    background-color: rgb(193, 164, 164);
+}
+.menu-button{
     width: 11vw;
     height: 11vw;
     border-radius: 50%;
@@ -132,4 +162,7 @@ main {
 }
 .c3 {
     background:var(--back-color3);
+}
+.group {
+    padding-left: 4vw;;
 }
